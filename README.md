@@ -5,7 +5,7 @@ It simply uses like this: // $REPLACEMENT$ text goes here
 Where text goes here used as a stiped byte array.
 
 # create venv
-py -m venv .\venv
+python -m venv .\venv
 
 # venv activate
 .\venv\Scripts\activate
@@ -14,4 +14,19 @@ py -m venv .\venv
 pip install -r requirements.txt
 
 # example run
-py .\cleans.py -y test.yar -f .\test_data\
+python cleans.py -y test.yar -f test_data -o out
+
+# Project Structure
+
+├── cleans.py
+├── README.md
+├── requirements.txt
+├── test_data
+│   ├── New folder
+│   │   ├── SubFodler
+│   │   │   └── test3.txt
+│   │   └── test2.txt
+│   └── test.txt
+└── test.yar
+
+3 directories, 7 files
